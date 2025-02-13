@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architektura - Nowoczesna Strona</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+</head>
+<body>
+<header>
+    <h1>KAROLINEX</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Strona Główna</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Nowoczesne Projekty Architektoniczne</h2>
+    <p>Tworzymy przestrzenie, które inspirują.</p>
+</section>
+
+<section id="about" class="about">
+    <h2>O mnie</h2>
+    <p>Jestem doświadczonym architektem specjalizującym się w nowoczesnym designie.</p>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+        <div class="project">
+            <a href="images/projekt1-1.jpg" data-lightbox="galeria" data-title="Projekt 1">
+                <img src="images/projekt1-1.jpg" alt="Projekt 1">
+            </a>
+            <a href="images/projekt1-2.jpg" data-lightbox="galeria" data-title="Projekt 1"></a>
+            <a href="images/projekt1-3.jpg" data-lightbox="galeria" data-title="Projekt 1"></a>
+        </div>
+        <div class="project">
+            <a href="images/projekt2-1.jpg" data-lightbox="galeria" data-title="Projekt 2">
+                <img src="images/projekt2-1.jpg" alt="Projekt 2">
+            </a>
+            <a href="images/projekt2-2.jpg" data-lightbox="galeria" data-title="Projekt 2"></a>
+            <a href="images/projekt2-3.jpg" data-lightbox="galeria" data-title="Projekt 2"></a>
+        </div>
+        <div class="project">
+            <a href="images/projekt3-1.jpg" data-lightbox="galeria" data-title="Projekt 3">
+                <img src="images/projekt3-1.jpg" alt="Projekt 3">
+            </a>
+            <a href="images/projekt3-2.jpg" data-lightbox="galeria" data-title="Projekt 3"></a>
+            <a href="images/projekt3-3.jpg" data-lightbox="galeria" data-title="Projekt 3"></a>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>Usługi</h2>
+    <ul>
+        <li>Projektowanie wnętrz</li>
+        <li>Planowanie urbanistyczne</li>
+        <li>Konsultacje architektoniczne</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <input type="text" placeholder="Imię i nazwisko" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Twoja wiadomość" required></textarea>
+        <button type="submit">Wyślij</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Architekt. Wszystkie prawa zastrzeżone.</p>
+</footer>
+<!-- Dodaj jQuery przed Lightbox2 -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Lightbox2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': "Zdjęcie %1 z %2"
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-size: 1.2rem; /* Powiększenie podstawowego tekstu */
+    line-height: 1.6; /* Poprawa odstępów między liniami */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #231212;
+    color: #d8b6b6;
+    padding: 20px;
+}
+
+.portfolio {
+    padding: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.project img:hover {
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.project img:not(:hover) {
+    filter: blur(5px);
+    opacity: 0.7;
+}
+h1 {
+    font-size: 3.5rem; /* Powiększenie głównego nagłówka */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.8rem; /* Powiększenie podtytułów */
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+nav ul {
+    display: flex; /* Ustawienie elementów w jednej linii */
+    justify-content: center; /* Wyśrodkowanie */
+    align-items: center; /* Wyrównanie w pionie */
+    list-style: none; /* Usunięcie kropek */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Dodanie odstępów między zakładkami */
+}
+
+nav ul li a {
+    font-size: 1.6rem; /* Powiększenie czcionki */
+    font-weight: bold; /* Pogrubienie */
+    text-transform: uppercase; /* Duże litery */
+    color: white; /* Kolor tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    transition: color 0.3s ease; /* Płynna zmiana koloru */
+
+}
+
+nav ul li a:hover {
+    color: #f4a261; /* Zmiana koloru po najechaniu */
+}
+.about, .portfolio, .services, .contact {
+    font-size: 1.4rem; /* Większa czcionka w treści sekcji */
+}

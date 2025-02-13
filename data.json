@@ -1,0 +1,29 @@
+[
+  {
+    "id": "projekt1",
+    "thumbnail": "images/projekt1-1.jpg",
+    "gallery": [
+      "images/projekt1-1.jpg",
+      "images/projekt1-2.jpg",
+      "images/projekt1-3.jpg"
+    ]
+  },
+  {
+    "id": "projekt2",
+    "thumbnail": "images/projekt2-1.jpg",
+    "gallery": [
+      "images/projekt2-1.jpg",
+      "images/projekt2-2.jpg",
+      "images/projekt2-3.jpg"
+    ]
+  },
+  {
+    "id": "projekt3",
+    "thumbnail": "images/projekt3-1.jpg",
+    "gallery": [
+      "images/projekt3-1.jpg",
+      "images/projekt3-2.jpg",
+      "images/projekt3-3.jpg"
+    ]
+  }
+]
